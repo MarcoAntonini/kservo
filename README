@@ -1,0 +1,27 @@
+This is a servo driver motor for linux kernel developed to be used
+on a board with available gpios.
+
+More info on use and ioctl interface see tthe code or:
+	http://www.mignanti.eu/progetti/embd/servo
+
+VERSION HISTORY
+---------------
+
+CROSS-COMPILE
+-------------
+To cross-compile this driver you need a gcc-arm and configured kernel. Then
+simple type:
+
+make KERNELDIR=<path_to_kernel> CROSSCOMPILE=<path to ggc cross compiler>
+
+This will generate servo.ko that can be insmoded in you kernel.
+
+EXAMPLE OF USAGE
+----------------
+
+
+DEVELOP
+-------
+Feel free to drop me a mail for bugs, suggestion, patch and general
+improvement <c.mignanti@gmail.com>
+
